@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>tip caluclator</title>
+    <style>
+      body {
+        background-color: whitesmoke;
+      }
+      .container {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px 0px 10px 10px;
+        box-sizing: 5px 5px 1px;
+        width: 40%;
+        position: relative;
+        top: 30%;
+        left: 30%;
+        transform: translateY(50px);
+      }
+      #bill_amount {
+        width: 90%;
+        margin: 0px 10px 0px 5px;
+        height: 30px;
+        border: 1px solid;
+      }
+      #tip_percentage {
+        width: 90%;
+        margin: 0px 10px 0px 5px;
+        height: 30px;
+        border: 1px solid;
+      }
+      #btn {
+        margin-top: 10px;
+        width: 90%;
+        margin-left: 5px;
+        background-color: green;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <boay>
+    <div class="container">
+      <h1 style="text-align: center">Tip caluclator</h1>
+      <p>Enter the bill amount and tip percentage to calculate the total.</p>
+      <p>Bill amount:</p>
+      <input type="number " name="amount" id="bill_amount" />
+      <p>Tip percentage:</p>
+      <input type="number" name="tip" id="tip_percentage" />
+      <button id="btn">calculate</button><br />
+      <label for="total">Total: </label>
+      <span id="total"></span>
+    </div>
+    <script src="./tip.js"></script>
+  </boay>
+</html>
